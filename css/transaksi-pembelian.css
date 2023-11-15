@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(/image/back6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: fit-content;
+    background-size: cover;
+    min-height: 90vh;
+}
+
+
+  /* badan login */
+.montok {
+    position: relative;
+    width: 600px;
+    height: 450px;
+    border: 2px solid rgb(15, 2, 2);
+    border-radius: 20px;
+    background-color: rgba(240, 248, 255, 0.68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* judul login */
+.montok h2 {
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+}
+
+  /* bagian input */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 18px;
+    border-bottom: 2px solid rgb(8, 2, 2);
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: rgb(12, 4, 4);
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+  /* bagian "remember me" & "lupa password" */
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label {
+    color: white;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+  /* tombol panah */
+
+
+
+.back-btn {
+    text-decoration: none;
+    
+    margin-left: -19rem;
+    color: white;
+    font-size: 65px;
+}
+
+.harga {
+    position: sticky;
+    bottom: 0px;
+    left: 950px;
+    background: rgba(43, 59, 59, 0.546);
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.harga p {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 350px;
+}
+footer{
+    color: #302d2df3;
+    margin-bottom: 1px;
+    margin-top: -2rem;
+}
+
+

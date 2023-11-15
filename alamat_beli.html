@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alamat Pengiriman</title>
+    <link rel="stylesheet" href="css/alamat.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <div class="judul"><h1>ALAMAT PENGIRIMAN</h1></div>
+  </head>
+
+  <body>
+    <div class="back-btn">
+      <a href="checkout_beli.html"><i class="bx bx-left-arrow-alt"></i></a>
+    </div>
+    <div class="kotak">
+      <form action="">
+        <div class="input-box">
+          <input type="text" required />
+          <label>Nama Penerima</label>
+        </div>
+
+        <div class="input-box">
+          <input type="text" required />
+          <label>Nomor HP</label>
+        </div>
+
+        <div class="form-group">
+          <select id="provinsi" name="provinsi" required>
+            <option value="" disabled selected>Pilih Provinsi</option>
+            <option value="aceh">Kepulauan Riau</option>
+            <option value="bali">Bali</option>
+            <option value="banten">Banten</option>
+          </select>
+        </div>
+        <br />
+
+        <div class="form-group">
+          <select id="provinsi" name="provinsi" required>
+            <option value="" disabled selected>Pilih Kota/Kabupaten</option>
+            <option value="aceh">Batam</option>
+            <option value="bali">Karimun</option>
+            <option value="banten">Bintan</option>
+          </select>
+        </div>
+        <br />
+
+        <div class="form-group">
+          <select id="provinsi" name="provinsi" required>
+            <option value="" disabled selected>Pilih Kecamatan</option>
+            <option value="aceh">Sei Langkai</option>
+            <option value="bali">Sagulung</option>
+            <option value="banten">Sei Panas</option>
+          </select>
+        </div>
+
+        <div class="input-box">
+          <input type="text" required />
+          <label>Alamat Detail</label><br />
+        </div>
+
+        <a href="checkout_beli.html"
+          ><button type="submit" class="btn">Simpan</button></a
+        >
+      </form>
+    </div>
+  </body>
+</html>

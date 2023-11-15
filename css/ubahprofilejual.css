@@ -1,0 +1,184 @@
+* {
+  margin: 0.2rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form-container {
+  max-width: 500px;
+  max-height: 90rem;
+  margin: 0 auto;
+  margin-top: -70px;
+  padding: 20px;
+  background-color: #f4f4f48b;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  color: rgb(3, 2, 2);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 10rem;
+}
+
+.profil-container a {
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+}
+
+.profil-container img {
+  max-width: 10rem; /* Mengatur lebar maksimum gambar */
+  border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+}
+
+legend {
+  margin-bottom: 10px;
+  margin-top: 10rem;
+}
+
+fieldset {
+  margin-top: 25px;
+  margin-bottom: 1rem;
+}
+
+/* Gaya label */
+label {
+  display: block; /* Mengubah label menjadi blok agar terpisah */
+  margin-bottom: -0.6rem; /* Jarak bawah antara setiap label */
+  font-weight: bold; /* Membuat teks label menjadi tebal */
+}
+
+/* Gaya input dan textarea */
+
+input {
+  color: #050b12;
+  width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.132);
+}
+input[type="text"] {
+  background-color: #df830b69;
+}
+input[type="number"] {
+  background-color: #df830b69;
+}
+input[type="file"] {
+  background-color: #df830b69;
+  width: 100%;
+}
+input[type="email"] {
+  background-color: #df830b69;
+}
+textarea {
+  background-color: #df830b69;
+  margin-bottom: 90px;
+  width: 100%; /* Memenuhi lebar kontainer */
+  padding: 5px; /* Memberi ruang di dalam input dan textarea */
+  margin-top: 1px; /* Jarak atas antara setiap input dan textarea */
+  border: 1px solid #ccc; /* Garis tepi input dan textarea */
+  border-radius: 5px; /* Sudut bulat pada input dan textarea */
+}
+
+/* Gaya input yang wajib diisi (required) */
+input[required] {
+  border-color: #f00; /* Merahkan tepi input yang wajib diisi */
+}
+
+/* Gaya input yang aktif/fokus */
+input:focus,
+textarea:focus {
+  border-color: #007bff; /* Warna tepi input dan textarea saat aktif/fokus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efek bayangan saat aktif/fokus */
+}
+
+/* Gaya tombol */
+.button-container input[type="submit"],
+.button-container input[type="button"] {
+  padding: 10px 20px; /* Atur ukuran tombol */
+  background-color: #df830bd1; /* Warna latar belakang tombol */
+  color: #fff; /* Warna teks tombol */
+  border: none; /* Hapus border */
+  cursor: pointer; /* Ganti kursor saat dihover */
+  margin-right: 10px; /* Beri jarak antara tombol */
+}
+
+.top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: -4rem;
+  padding: px;
+  margin-top: 2rem;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+/* Membuat tampilan untuk ikon panah kembali */
+.bx.bxs-chevron-left {
+  font-size: 90px;
+}
+
+body {
+  height: 2000px;
+  background-image: url(/image/back6.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: fit-content;
+  background-size: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="email"],
+input[type="file"] {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+input[type="submit"],
+input[type="button"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #0056b3;
+}

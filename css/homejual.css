@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.top {
+  width:100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0rem;
+  margin-top: 1px;
+  margin-left: 9px;
+  
+}
+
+/* Membuat tampilan untuk ikon panah kembali */
+.bx.bxs-chevron-left {
+  font-size: 54px;
+}
+
+/* Membuat tampilan untuk elemen h1 */
+h1 {
+  margin: 0;
+}
+
+/* Membuat tampilan untuk ikon panah bawah */
+.bx.bxs-chevron-down {
+  font-size: 48px;
+}
+
+/* Membuat tampilan untuk elemen h3 */
+h3 {
+  text-align: left;
+  padding-left: 1px;
+}
+
+/* Membuat tampilan untuk tautan a */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Membuat tampilan saat tautan a diklik */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Membuat tampilan untuk kontainer dengan class "container item" */
+.container.item {
+  text-align: center;
+  padding: 0px;
+  color: white;
+}
+
+/* Membuat tampilan untuk tautan a */
+.container.item a {
+  text-decoration: none; /* Menghapus garis bawah dari tautan */
+  color: white; /* Warna teks tautan */
+}
+
+/* Membuat tampilan untuk ikon pengguna */
+.container.item i.bx.bxs-user {
+  font-size: 50px;
+}
+
+.spacer {
+  height: 9rem;
+}
+body {
+  height: 2000px;
+  background-image: url(/image/back6.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: fit-content;
+  background-size: cover;
+}
+
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.155);
+  backdrop-filter: blur(5px);
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+nav button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.363);
+  backdrop-filter: blur(5px);
+  padding: 1rem 2rem;
+  z-index: 999;
+}
+
+nav button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+nav i {
+  font-size: 30px;
+  color: white;
+}
+
+nav a {
+  margin-left: 1rem;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+
+nav input::placeholder {
+  color: black;
+}
+
+nav input:focus {
+  border: none;
+  outline: none;
+  color: black;
+}
+
+.banner {
+  height: 200px;
+  margin: 1rem 0 1rem;
+}
+
+.banner img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 200px;
+}
+
+.product {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  background: rgba(93, 73, 73, 0.2);
+  backdrop-filter: blur(1px);
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-pro {
+  width: 20%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 0.1rem 2rem;
+  border-radius: 6px;
+  border: 2px solid white;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.product-pro img {
+  width: 100%;
+  height: 180px;
+  max-height: 80%;
+}
+
+.product-pro h4,
+.product-pro h3,
+.product-pro i {
+  color: black;
+}
+
+nav i {
+  font-size: 30px;
+  color: white;
+}
+
+nav a {
+  margin-left: 1rem;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+}
+
+nav .search {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  width: 50%;
+  background-color: white;
+  border-radius: 6px;
+  height: 40px;
+}
+
+nav .search i {
+  color: black;
+  font-size: 20px;
+}
+
+nav input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+nav input::placeholder {
+  color: black;
+}
+
+nav input:focus {
+  border: none;
+  outline: none;
+  color: black;
+}
+
+.kategori {
+  position: absolute;
+  width: 20rem;
+  left: -100%;
+  z-index: 998;
+  transition: 2ms;
+  background-color: white;
+  height: 100vh;
+  transition: 100ms ease;
+}
+
+.kategori.active {
+  left: 0;
+}
+
+.kategori a,
+.kategori h2 {
+  color: black;
+  text-decoration: none;
+}
+
+.kategori li:hover {
+  background-color: grey;
+}
+
+.banner {
+  height: 200px;
+  margin: 1rem 0 1rem;
+}
+
+.banner img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 200px;
+}
+
+.product {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  background: rgba(84, 82, 94, 0.345);
+  backdrop-filter: blur(1px);
+  padding: 1rem;
+  border-radius: 6px;
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.product-pro {
+  width: 20%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 0.1rem 2rem;
+  border-radius: 6px;
+  border: 2px solid white;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.product-pro img {
+  width: 100%;
+  height: 180px;
+  max-height: 80%;
+}
+
+.product-pro h4,
+.product-pro h3,
+.product-pro i {
+  color: black;
+}

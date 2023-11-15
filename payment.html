@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/payment.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="keranjang.html" class="back-btn"><i class="bx bx-chevron-left"></i></a>
+      <h2>PEMBAYARAN</h2>
+    </header>
+
+
+    <div class="checkout-container">
+      <div class="pro-img"><img src="" style="position: center;"></div>
+      <div class="info-checkout">
+        <table>
+          <tr>
+            <td>ID Pemesanan</td>
+            <td>:</td>
+            <td>123456</td>
+          </tr>
+          <tr>
+            <td>Metode Pembayaran</td>
+            <td>:</td>
+            <td>
+              <select name="" id="" style="color: black">
+                <option value="debit" style="color: black">Debit</option>
+                <option value="cod" style="color: black">COD</option>
+                <option value="alfamart" style="color: black">Alfamart</option>
+                <option value="indomaret" style="color: black">Indomaret</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                Kirim Bukti Pembayaran
+            </td>
+            <td>:</td>
+            <td><input type="file"></td>
+          </tr>
+        </table>
+      </div>
+      <div class="verifikasi">
+        <div class="verifikasi-btn">
+          <input type="checkbox" name="verifikasi" id="verifikasi"/><label for="verifikasi">Saya Menyetujui Pembelian</label>
+        </div>
+        <a href="transaksi_beli.html" class="order-btn">KIRIM</a>
+      </div>
+    </div>
+  </body>
+</html>

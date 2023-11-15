@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link rel="stylesheet" href="css/checkout.css"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<header>
+  <a href="keranjang.html" class="back-btn"><i class="bx bx-chevron-left"></i></a>
+  <h2>CHECKOUT</h2>
+</header>
+
+<div class="alamat" id="showFormButton">
+  <h3>Alamat Pengiriman</h3>
+  <p>Isi alamat pengiriman terlebih dahulu</p>
+</div>
+
+<div class="checkout-container">
+  <div class="pro-img"><img src="" alt=""/></div>
+  <div class="info-checkout">
+    <table>
+      <tr>
+        <td>ID</td>
+        <td>:</td>
+        <td>123456</td>
+      </tr>
+      <tr>
+        <td>Nama Produk</td>
+        <td>:</td>
+        <td>Mouse</td>
+      </tr>
+      <tr>
+        <td>Harga Produk</td>
+        <td>:</td>
+        <td>Rp 75.000</td>
+      </tr>
+      <tr>
+        <td>Jumlah Produk</td>
+        <td>:</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Biaya Pengiriman</td>
+        <td>:</td>
+        <td>Rp 25.000</td>
+      </tr>
+      <tr>
+        <td>Biaya Penanganan</td>
+        <td>:</td>
+        <td>Rp 3.000</td>
+      </tr>
+      <tr>
+        <td>Metode Pembayaran</td>
+        <td>:</td>
+        <td>
+          <select name="metodePembayaran" style="color: black">
+            <option value="debit" style="color: black">Debit</option>
+            <option value="cod" style="color: black">COD</option>
+            <option value="alfamart" style="color: black">Alfamart</option>
+            <option value="indomaret" style="color: black">Indomaret</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="verifikasi">
+    <div class="verifikasi-btn">
+      <input type="checkbox" name="verifikasi" id="verifikasi"/><label for="verifikasi">Saya Menyetujui Pembelian</label>
+    </div>
+    <a href="payment.html" class="order-btn">Buat Pesanan</a>
+  </div>
+</div>
+
+<!-- Alamat Update -->
+<div class="example-form">
+  <div class="form fade" id="editalmt" role="dialog">
+    <div class="form-dialog">
+      <div class="form-content">
+        <div class="form-header">
+          <h3 class="form-title" button id="showFormButton">ALAMAT</h3>
+        </div>
+        <div class="form fade hidden" id="editalmt" role="dialog"></div>
+        <div class="form-body">
+          <form action="../update_mhs.php" method="post" role="form">
+            <div class="form-group">
+              <div class="row">
+                <label class="col-sm-3 control-label text-right">Nama Penerima</label>
+                <div class="col-sm-8">
+                  <input type="text" name="nama" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <label class="col-sm-3 control-label text-right">Nomor Telepon</label>
+                <div class="col-sm-8">
+                  <input type="number" name="nama" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <label class="col-sm-3 control-label text-right">Provinsi</label>
+                <div class="col-sm-8">
+                  <select name="provinsi" id="">Provinsi</select>
+                  <option value="">Kepulauan Riau</option>
+                  <option value="">Sumatra Utara</option>
+                  <option value="">Sumatra Barat</option>
+                  <option value="">Jawa Barat</option>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <label class="col-sm-3 control-label text-right">Kota</label>
+                <div class="col-sm-8">
+                  <select name="provinsi" id="">Kota</select>
+                  <option value="">Kota Batam</option>
+                  <option value="">Pulau Natuna</option>
+                  <option value="">Pulau Karimun</option>
+                  <option value="">Kota Tanjung Pinang</option>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <label class="col-sm-3 control-label text-right">Kecamatan</label>
+                <div class="col-sm-8">
+                  <select name="provinsi" id="">Kecamatan</select>
+                  <option value="">Kecamatan Sagulung</option>
+                  <option value="">Kecamatan Batu Aji</option>
+                  <option value="">Kecamatan Tembesi</option>
+                  <option value="">Kecamatan Nongsa</option>
+                  <option value="">Kecamatan Batam Kota</option>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <label class="col-sm-3 control-label text-right">Kelurahan</label>
+                <div class="col-sm-8">
+                  <select name="provinsi" id="">Kelurahan</select>
+                  <option value="">Kelurahan Sei Panas</option>
+                  <option value="">Kelurahan Sei Pelunggut</option>
+                  <option value="">Kelurahan Lubuk Baja</option>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <label class="col-sm-3 control-label text-right">Patokan Alamat</label>
+                <div class="col-sm-8">
+                  <input type="text" name="nama" class="form-control">
+                </div>
+              </div>
+            </div>
+            <!-- Add other form fields here -->
+            <div class="form-footer">
+              <button id="noedit" type="button" class="btn btn-danger pull-left" data-dismiss="form">Batal</button>
+              <input type="submit" name="submit" class="btn btn-primary" value="Ubah">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Add JavaScript to show and hide the form -->
+<script>
+  // Hide the form initially
+  document.getElementById("editalmt").style.display = "none";
+
+  // Show the form when the button is clicked
+  document.getElementById("showFormButton").addEventListener("click", function() {
+    document.getElementById("editalmt").style.display = "block";
+  });
+
+  // Hide the form when the cancel button is clicked
+  document.getElementById("noedit").addEventListener("click", function() {
+    document.getElementById("editalmt").style.display = "none";
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: tahoma;
+}
+
+body {
+    height: 2000px;
+    display: flex;
+    background-image: url(/image/back6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: fit-content;
+    background-size: cover;
+    
+}
+
+.back-btn {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+/* Membuat tampilan untuk ikon panah kembali */
+.back-btn .bxs-chevron-left {
+  font-size: 5rem;
+}
+
+img {
+    height: 20rem;
+    width: 17rem;
+    padding: 1rem;
+    margin: 5rem 0 0 3rem;
+
+}
+
+.tabel {
+    border: 2px solid #0000003c;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 6rem;
+    background-color: #0a050554;
+    height: 13rem;
+    width: 37rem;
+    text-decoration: none;
+}
+
+table {
+    margin-top: -1rem;
+    width: 600%;
+    text-decoration: none;
+}
+
+table td {
+    padding: 1px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+}
+
+label {
+    font-weight: bold;
+}
+
+label[for="isideskripsi"] {
+    font-weight: 1px;
+}
+
+.product-variation {
+    display: flex;
+}
+
+.variation-button {
+    padding: 5px 4px;
+    margin: 2px;
+    background-color: #e8a84f6c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.6s;
+}
+
+.variation-button:hover {
+    background-color: #f3a01c;
+}
+
+.edit, .hapus {
+    font-weight: bold;
+    margin-top: 180px;
+    padding: 10px 20px;
+    background-color: #ff080882;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 100px;
+    height: 40px;
+    width: 100px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.edit:hover, .hapus:hover {
+    background-color: #b30000;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Tambah Produk</title>
+  <link rel="stylesheet" type="text/css" href="css/formproduk.css">
+  <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"/>
+</head>
+<body>
+      <a href="daftarprodukjual.html" class="back-btn"><i class="bx bxs-chevron-left"></i></a></div>
+
+  <div class="form-container">
+    <fieldset>
+      <legend>Lengkapi Isian Berikut!</legend>
+      <pre>
+      <form>
+      <h2><center>Form Tambah Produk</center></h2>
+      <table>
+        <tr><td><label for="nama">Nama:</td>               <td><input type="text" id="nama" name="nama" required></label></td></tr>
+        <tr><td><label for="id">ID: </td>                  <td><input type="text" id="id" name="id" required></label></td></tr>
+        <tr><td><label for="harga">Harga:  </td>             <td><input type="number" id="harga" name="harga" required></label></td></tr>
+        <tr><td><label for="variasi">Variasi:</td>             <td><input type="text" id="variasi" name="variasi"></label></td></tr>
+        <tr><td><label for="stok">Stok: </td>                <td><input type="number" id="stok" name="stok" required></label></td></tr>
+        <tr><td><label for="kategori">Kategori:  </td>        <td><input type="text" id="kategori" name="kategori"></label></td></tr>
+        <tr><td><label for="deskripsi">Deskripsi:</td>        <td><textarea id="deskripsi" name="deskripsi"></textarea></label></td></tr>
+        <tr><td><label for="gambar">Pilih Gambar:</td>   <td><input type="file" id="gambar" name="gambar"></label></td></tr>
+      </table>
+      <div class="button-container">
+        <input type="submit" value="Simpan">
+        <input type="button" value="Batal" onclick="window.location.href='index.html'">
+      </div>
+    </form>
+    </pre>
+    </fieldset>
+
+  </div>
+</body>
+</html>
