@@ -8,7 +8,7 @@
 
 body {
   height: 20000px;
-  background-image: url(/image/back6.jpg);
+  background-image: url(../image/back6.jpg);
   background-repeat: no-repeat;
   backdrop-filter: blur(3px);
   background-attachment: fixed;
