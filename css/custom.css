@@ -1,0 +1,39 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.thumb-wrapper {
+  padding: 25px 15px;
+  background: #fff;
+  border-radius: 6px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  min-width: 5rem;
+}
+
+.carousel-inner {
+    background-color: grey;
+    margin-bottom: 3rem;
+}
+
+.carousel-inner img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1000px !important;
+    height: 400px;
+}
+
+.product-anchor {
+    color: black;
+}
+
+.logoStore {
+    width: 20rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
