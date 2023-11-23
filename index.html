@@ -26,9 +26,11 @@
 
   <body>
     <!-- nav bar start-->
-    <nav class="navbar navbar-expand bg-primary">
+    <nav class="navbar navbar-expand bg-success">
       <div class="container">
-        <a href="" class="navbar-brand text-light"><strong>CC Store</strong></a>
+        <a href="" class="navbar-brand text-light fs-4"
+          ><strong>CC Store</strong></a
+        >
         <form class="d-flex bg-light rounded">
           <input
             class="form-control me-2"
@@ -46,7 +48,7 @@
           <li class="nav-item">
             <a
               href=""
-              class="btn btn-primary"
+              class="btn btn-success mx-2 fs-5"
               data-bs-toggle="modal"
               data-bs-target="#modal-cart"
             >
@@ -54,12 +56,8 @@
             </a>
           </li>
           <!-- button login -->
-          <li class="nav-item">
-            <button
-              class="btn btn-secondary"
-              data-bs-toggle="modal"
-              data-bs-target="#modal-login"
-            >
+          <li class="nav-item js-login-profile">
+            <button class="btn btn-success fs-5 btn-outline-light js-login-btn">
               Login
             </button>
           </li>
@@ -179,27 +177,27 @@
     <div class="modal fade" id="modal-login">
       <div class="modal-dialog modal-md">
         <div class="modal-content">
-          <div class="modal-header">
-            <h1>Login</h1>
+          <div class="modal-header bg-success text-light">
+            <h3>Login</h3>
           </div>
           <div class="modal-body">
-            <img src="images/assets/logo.png" alt="" class="logoStore">
+            <img src="images/assets/logo.png" alt="" class="logoStore m-0" />
             <form>
               <!-- Email input -->
               <div class="form-outline mb-4">
-                <input type="email" id="username" class="form-control" />
                 <label class="form-label" for="username">Username</label>
+                <input type="email" id="username" class="form-control" />
               </div>
 
               <!-- Password input -->
               <div class="form-outline mb-4">
-                <input type="password" id="password" class="form-control" />
                 <label class="form-label" for="password">Password</label>
+                <input type="password" id="password" class="form-control" />
               </div>
 
               <!-- 2 column grid layout for inline styling -->
               <div class="row mb-4">
-                <div class="col d-flex justify-content-center">
+                <div class="col-md-8">
                   <!-- Checkbox -->
                   <div class="form-check">
                     <input
@@ -215,14 +213,14 @@
                   </div>
                 </div>
 
-                <div class="col">
+                <div class="col-md-4 text-end">
                   <!-- Simple link -->
                   <a href="#!">Lupa Password?</a>
                 </div>
               </div>
 
               <!-- Submit button -->
-              <button type="button" class="btn btn-primary btn-block mb-4">
+              <button type="button" class="btn btn-success btn-block mb-4" style="width: 100%;">
                 Login
               </button>
             </form>
@@ -239,23 +237,23 @@
 
     <!-- modal cart start -->
     <div class="modal fade" id="modal-cart">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
-          <div class="modal-header"><h3>KERANJANG</h3></div>
+          <div class="modal-header bg-success text-light"><h3>Keranjang</h3></div>
           <div class="modal-body">
             <div class="card rounded-3 mb-4">
               <div class="card-body p-4">
                 <div
                   class="row d-flex justify-content-between align-items-center"
                 >
-                  <div class="col-md-2 col-lg-2 col-xl-2">
+                  <div class="col-md-2">
                     <img
                       src="images/products/produk1.jpg"
                       class="img-fluid rounded-3"
                       alt="Cotton T-shirt"
                     />
                   </div>
-                  <div class="col-md-3 col-lg-3 col-xl-3">
+                  <div class="col-md-3">
                     <p class="lead fw-normal mb-2">
                       <a
                         href=""
@@ -287,34 +285,15 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                    >
-                      <i class="fas fa-minus"></i>
-                    </button>
-
-                    <input
-                      id="form1"
-                      min="0"
-                      name="quantity"
-                      value="2"
-                      type="number"
-                      class="form-control form-control-sm"
-                    />
-
-                    <button
-                      class="btn btn-link px-2"
-                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                    >
-                      <i class="fas fa-plus"></i>
-                    </button>
-                  </div>
-                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                  <div class="col-md-5 d-flex">
                     <h5 class="mb-0">Rp 13.500.000,-</h5>
                   </div>
-                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                  <div class="col-md-1">
+                    <a href="checkout.html" class="btn btn-success"
+                      ><i class="bi bi-cart"></i
+                    ></a>
+                  </div>
+                  <div class="col-md-1">
                     <a href="#!" class="text-danger"
                       ><i class="fas fa-trash fa-lg"></i
                     ></a>
@@ -336,15 +315,78 @@
 
     <!-- modal product start -->
     <div class="modal fade" id="modal-productCard">
-      <div class="modal-dialog modal-xl">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-header"><h3>Product</h3></div>
-          <div class="modal-body"></div>
+          <div class="modal-header bg-success text-light"><h3>Product</h3></div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row gx-4 gx-lg-5">
+                <div class="col-md-5 d-flex h-100">
+                  <img
+                    class="card-img-top mb-5 mb-md-0 align-self-start sticky-top"
+                    src="images/products/produk1.jpg"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-md-7">
+                  <h1 class="display-5 fw-bolder">Laptop Gaming</h1>
+                  <div class="fs-5">Rp 13.5000.000,-</div>
+                  <div class="star-rating mb-5">
+                    <ul class="list-inline">
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star"></i>
+                      </li>
+                      <li class="list-inline-item">
+                        <i class="fa fa-star-o"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="lead">
+                    Selagi masih ada Langsung saja di order boskuu.. Unit Cocok
+                    utk Pecinta Gaming dan Program berat Dll... Laptop Asus
+                    Gaming FX505DD, Amd Ryzen 5 - 3550H Spesifikasi: - Processor
+                    : Amd Ryzen 5 - 3550H, ~ 2,1Ghz ###UALVGA: - Vga : Amd
+                    Radeon Vega 8 Dedicated shared 4GB Graphics - Vga : Nvidia
+                    Geforce GTX 1050 Total memory 4Gb (Ngebut) - Memory : 16 GB
+                    DDR4 2666 MHz Super Speed dan tersedia ram 8Gb ddr4 - SSD
+                    256Gb bisa doble drive Display : 15.6 inch Full HD IPS
+                    Wide-View Anti-Glare Matte - Connectivity : 3x USB 3.0
+                    SuperSpeed, HDMI, headphone / mic combo jack, 802.11a/g/n
+                    WLAN, Bluetooth 4.2, Gigabyte Ethernet Mbps, Card Reader -
+                    Keyboard : Backlight (Nyala) RGB 3 Zona - Audio : ASUS ROG
+                    Sonic Master (Suara Super Ngebas) Keterangan Unit : Kondisi
+                    Ok Overall Body 96% Mesin lancar jaya Layar jernih Engsel
+                    kokoh - Kelengkapan: Unit Charge Tas Dus Bergaransi NB :
+                    Silahkan tanya2 kita detail lainnya Pastikan sebelum membeli
+                    untuk mengecek apakah alat yang kami jual sudah sesuai
+                    dengan spesifikasi alat yang kakak butuhkan, bila ragu boleh
+                    hubungi kami. * Sebelum Pengiriman Semua Barang Dicek
+                    Terlebih Dahulu dengan Kondisi sesuai Deskripsi. * Barang
+                    bisa Return apabila ada masalah, dengan syarat ongkir
+                    ditanggung pembeli * Jika ada Permasalahan Utamakan Diskusi
+                    untuk mencari Solusi * Pemberian Feedback Negatife Garansi
+                    Hilang * Segel Hilang/Rusak Garansi Hilang. * Membeli
+                    berarti Setuju dengan ketentuan yang ada
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="modal-footer">
-            <button class="btn btn-danger" data-bs-dismiss="modal">
-              Cancel
+            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+              <i class="bi-cart-fill me-1"></i>
+              Add to cart
             </button>
-            <a href="" class="btn btn-success">Checkout</a>
+            <a href="checkout.html" class="btn btn-success">Checkout</a>
           </div>
         </div>
       </div>
@@ -368,5 +410,28 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let login = false;
+      const loginBtn = document.querySelector(".js-login-profile");
+      if (!login) {
+        loginBtn.innerHTML = `
+        <button
+          class="btn btn-success fs-5 btn-outline-light js-login-btn"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-login"
+        >
+          Login
+        </button>`;
+      } else {
+        loginBtn.innerHTML = `
+        <a
+          href = "profile_user.html"
+          class="btn btn-success fs-5 btn-outline-light js-login-btn"
+        >
+          Profil
+        </a>
+        `;
+      }
+    </script>
   </body>
 </html>

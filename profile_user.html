@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <nav class="nav"></nav>
+  <div
+    class="container card pb-3 pt-3 rounded mb-5 mt-5"
+    style="max-width: 40rem"
+  >
+    <div class="container mb-3">
+      <center>
+        <strong>
+          <h1>Profil</h1>
+        </strong>
+      </center>
+    </div>
+    <div class="container">
+      <img
+        src="images/users/Screenshot 2023-11-22 150055.png"
+        alt=""
+        class="rounded-circle mb-5 align-center-center profile-img"
+        style="max-width: 20rem"
+      />
+    </div>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-3 border-bottom">
+          <p>Nama</p>
+        </div>
+        <div class="col-md-9 border-bottom">
+          <p>Kevin Renaldi</p>
+        </div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-md-3">
+          <p>Jenis Kelamin</p>
+        </div>
+        <div class="col-md-9">
+          <p>Attack helicopter</p>
+        </div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-md-3">
+          <p>Tanggal Lahir</p>
+        </div>
+        <div class="col-md-9">
+          <p>Ntahlah</p>
+        </div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-md-3">
+          <p>Email</p>
+        </div>
+        <div class="col-md-9">
+          <p>Jemboed@gmail.com</p>
+        </div>
+      </div>
+      <div class="row border-bottom">
+        <div class="col-md-3">
+          <p>No HP</p>
+        </div>
+        <div class="col-md-9">
+          <p>0800 0930 0302</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <a href="index.html" class="btn btn-primary">Kembali</a>
+      <a
+        href=""
+        class="btn btn-success"
+        data-bs-toggle="modal"
+        data-bs-target="#modal-edit"
+        >Edit Profil</a
+      >
+    </div>
+  </div>
+
+  <!-- modal edit start -->
+  <div class="modal fade" id="modal-edit">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">Edit Profil</div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-outline mb-2">
+              <label class="form-label" for="nama">Nama</label>
+              <input type="text" id="nama" class="form-control" />
+            </div>
+            <div class="form-outline mb-2">
+              <label class="form-label" for="jenisKelamin">Jenis Kelamin</label>
+              <input type="text" id="jenisKelamin" class="form-control" />
+            </div>
+            <div class="form-outline mb-2">
+              <label class="form-label" for="birth">Tanggal Lahir</label>
+              <input type="date" id="birth" class="form-control" />
+            </div>
+            <div class="form-outline mb-2">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <div class="form-outline mb-2">
+              <label class="form-label" for="noHP">No HP</label>
+              <input type="number" id="noHP" class="form-control" />
+            </div>
+            <button type="button" class="btn btn-primary btn-block mb-4">
+              Ubah
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal edit end -->
+
+  <body>
+    <script
+      src=" https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

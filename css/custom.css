@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background: #f2f3f7 !important;
+}
+
 .thumb-wrapper {
   padding: 25px 15px;
   background: #fff;
@@ -15,25 +31,35 @@
 }
 
 .carousel-inner {
-    background-color: grey;
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .carousel-inner img {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 1000px !important;
-    height: 400px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px !important;
+  height: 400px;
 }
 
 .product-anchor {
-    color: black;
+  color: black;
 }
 
 .logoStore {
-    width: 20rem;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  width: 20rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
+.profile-img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#js-pembayaran {
+  transition: ease 3s;
+}
+
