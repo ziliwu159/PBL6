@@ -59,6 +59,49 @@ body {
   transform: translateX(-50%);
 }
 
+.kategori {
+  position: absolute;
+  width: 10rem;
+  left: 0rem; /* Initially hide the menu off-screen */
+  z-index: 998;
+  transition: 0.2s; /* Shorter transition time */
+  background-color: rgba(12, 6, 6, 0.201);
+  height: 13rem;
+  text-align: left;
+  border: 3px;
+  border-bottom-right-radius: 9px;
+}
+
+.kategori a, .kategori h2 {
+  color: black;
+  text-decoration: none;
+}
+
+.kategori li:hover {
+  background-color: rgb(246, 238, 238);
+  border: 9px;
+  border-radius: 3px;
+}
+
+#menu-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.bx-menu {
+  display: block;
+}
+
+.bx-x {
+  display: none;
+}
+
+
 #js-pembayaran {
   transition: ease 3s;
 }
