@@ -63,3 +63,22 @@ body {
   transition: ease 3s;
 }
 
+#js-product-card {
+  transition: all 0.3s linear;
+}
+
+.js-carousel-btn {
+  border: none;
+  border-radius: 50%;
+  padding: 1rem;
+  position: absolute;
+}
+
+.js-to-left-btn {
+  left: 0;
+  top: 50%;
+}
+.js-to-right-btn {
+  right: 0;
+  top: 50%;
+}
