@@ -26,11 +26,16 @@
 
   <body>
     <!-- nav bar start-->
-    <nav class="navbar navbar-expand bg-success">
+    <nav class="navbar navbar-expand bg-success sticky-top">
       <div class="container">
-        <a href="" class="navbar-brand text-light fs-4">
-          <strong>CC Store</strong>
-        </a>
+        <div class="d-flex align-items-center">
+          <button class="btn btn-success" id="js-menu-btn">
+            <i class="bi bi-list fs-5"></i>
+          </button>
+          <a href="" class="navbar-brand text-light fs-4 mx-2">
+            <strong>CC Store</strong>
+          </a>
+        </div>
         <form class="d-flex bg-light rounded">
           <input
             class="form-control me-2"
@@ -60,6 +65,26 @@
             <button class="btn btn-success fs-5 btn-outline-light js-login-btn">
               Login
             </button>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="position-absolute menu-side-bar align-items-start container bg-light w-25"
+        style="min-height: 100vh"
+      >
+        <ul class="" style="list-style: none">
+          <h2>Kategori</h2>
+          <li class="nav-item">
+            <a href="" class="nav-link active w-100">Keyboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active w-100">Komponen Komputer</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active w-100">Mouse</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link active w-100">Laptop</a>
           </li>
         </ul>
       </div>
@@ -131,7 +156,9 @@
     <div class="container-xl bg-success card p-3 mb-5" style="overflow: hidden">
       <div class="row">
         <div class="col-md-12">
-          <h1 style="text-align: center">Featured Product</h1>
+          <h1 class="text-light font-weight-bold" style="text-align: center">
+            Featured Product
+          </h1>
           <!-- product card start -->
 
           <div class="row">
@@ -221,6 +248,31 @@
     </div>
 
     <!-- featured product end -->
+
+    <!-- Footer Start -->
+    <footer class="bg-success text-light text-center mb-0 p-3">
+      <div class="mb-2">
+        <h2>Tentang Kami</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil
+          dignissimos magni ratione? Reiciendis exercitationem quisquam quae
+          aperiam cum quaerat est dolorem quo praesentium. Quisquam similique
+          aperiam voluptatum suscipit sapiente.
+        </p>
+      </div>
+      <h3 class="text-start">Contact Us</h3>
+      <ul class="nav m-auto">
+        <li class="nav-item mx-2">
+          <i class="bi bi-instagram"></i>
+          <a href="">CC_Store</a>
+        </li>
+        <li class="nav-item mx-2">
+          <i class="bi bi-envelope"></i>
+          <a href="">ccstore@gmail.com</a>
+        </li>
+      </ul>
+    </footer>
+    <!-- Footer End -->
 
     <!-- modal login start -->
     <div class="modal fade" id="modal-login">
@@ -412,5 +464,6 @@
         `;
       }
     </script>
+    <script src="js/menu-btn.js"></script>
   </body>
 </html>

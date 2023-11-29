@@ -82,3 +82,14 @@ body {
   right: 0;
   top: 50%;
 }
+
+.menu-side-bar {
+  top: 100%;
+  left: -100%;
+  transition: all 500ms ease;
+  min-height: 100vh;
+}
+
+.menu-side-bar.active {
+  left: -3%;
+}
